@@ -7,7 +7,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 
 public abstract class AbstractDBConnector implements DBConnector {
-    private final Connection connection;
+    protected final Connection connection;
 
     public AbstractDBConnector(Connection connection) {
         this.connection = connection;
